@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{ background-color: black;}
+#click, .hide{
+    display: none;
+}
+.navbar{
+    background-color: black;
+    border-bottom: 1px solid white;
+    /* height: 10vh; */
+}
+.border{
+    /* box-shadow: 0px 0px 20px white; */
+    border: 2px solid white;
+    /* padding: 0 5px 0 5px; */
+    border-radius: 5px;
+}
+.nav{
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 10%;
+    height: 10vh;
+}
+.more{
+    float: right;
+    /* display: inline; */
+    display: none;
+
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.menu li{
+    /* box-sizing: border-box; */
+    list-style: none;
+    margin: 3px 10px 3px 10px;
+    padding: 0 5px 0 5px;
+    transition: all 0.4s linear;
+}
+.menu li:hover{
+    box-shadow: 0px 0px 20px white;
+    list-style: none;
+    font-family :Bradley Hand ITC;
+    margin: 5px 10px 5px 10px;
+    /* padding: 0 3px 0 3px; */
+    border: 1px solid red;
+    border-radius: 3px;
+}
+.menu li a{
+    font-family :Bradley Hand ITC;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.9rem;
+    color: rgb(255, 255, 255);
+}
+.sign{
+    transition: 0.4s linear;
+    font-family :Bradley Hand ITC;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 20px 0 0;
+    width: 20%;
+    height: 7vh;
+    font-weight: 900;
+    font-size: 1.8rem;
+    display: inline-flex;
+    float: right;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.sign:hover{
+    box-shadow: 0px 0px 20px white;
+    border: 1px solid red;
+    /* background-color: white; */
+    /* color: black; */
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* margin: 10px 20px 0 0; */
+    /* width: 20%;
+    height: 7vh; */
+    font-weight: 900;
+    /* font-size: 2rem; */
+    display: inline-flex;
+    /* float: right; */
+    text-decoration: none;
+    /* color: rgb(255, 255, 255); */
+}
+.back{
+    border-bottom: 2px solid white;
+    margin-bottom: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 92vh;
+    
+}
+.back-back img{
+    box-shadow: 0px 0px 20px #fdfdfd;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+.back-back{
+    width: 60%;
+    height: 60vh; 
+    /* background-size: cover; 
+    border-radius: 10px;
+    background-image: url(fggfd.png);  */
+}
+.artical{
+    /* border: 2px solid black; */
+    /* margin: 10px; */
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards {
+    box-shadow: 0px 0px 10px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    border: 2px solid rgb(194, 0, 0);
+    border-radius: 10px;
+    margin: 10px;
+}
+.cards img{
+    box-shadow: 0px 0px 20px white;
+    border-radius: 50px;
+    width: 80%;
+    height: 50vh;
+}
+.cards h3{
+    font-weight: 900;
+    font-family :Bradley Hand ITC;
+    color: red;
+    margin: 15px;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.cards p{
+    color: red;
+    font-family :Bradley Hand ITC;
+    font-size: 1.3rem;
+    margin: 10px;
+    font-weight: 900;
+}
+.cards a button{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 20px;
+    width: 200px;
+    height: 7vh;
+    background-image: linear-gradient(to right, rgb(194, 5, 5), rgb(167, 39, 0), rgb(255, 0, 13));
+    font-family :Bradley Hand ITC;
+}
+.cards a button:hover{
+    box-shadow: 0px 0px 20px white;
+    transition: all 0.6s linear;
+    border: 1px solid red;
+    cursor: pointer;
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 900;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 20px;
+    width: 200px;
+    height: 7vh;
+    background-image: linear-gradient(white, white, white);
+    /* background-image: linear-gradient(to right, rgb(194, 5, 5), rgb(167, 39, 0), rgb(255, 0, 13)); */
+    font-family :Bradley Hand ITC;
+}
+
+.footer{
+    border-top: 2px solid white;
+    margin: 50px 0 20px 0;
+    font-family :Bradley Hand ITC;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 7vh;
+}
+
+
+
+
+@media screen and (max-width: 1500px) {
+    .menu li a{
+        font-size: 1.5rem;
+    }
+    .sign{
+        font-size: 1.5rem;
+    }
+    .sign:hover{
+        font-size: 1.5rem;
+    }
+    .cards{
+        width: 30%;
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 1200px) {
+   
+    .logo{
+        width: 15%;
+        /* border: 2px solid white; */
+    }
+    .cards{
+        width: 30%;
+    }
+    .back-back {
+        width: 70%;
+    }
+    
+}
+@media screen and (max-width: 1050px) {
+   
+    .sign{
+        font-size: 1.3rem;
+        width: 20%;
+    }
+    .cards{
+        width: 40%;
+    }
+    .menu li a{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 950px) {
+    .hide{
+        /* border: 2px solid white; */
+        display: block;
+        font-family :Bradley Hand ITC;
+        text-decoration: none;
+        font-weight: 900;
+        color: white;
+        font-size: 2rem;    
+        margin: 20px 10px 10px 10px;
+        padding: 5px;
+    }
+    .hide:hover{
+        box-shadow: 0px 0px 20px white;
+        border: 1px solid red;
+        border-radius: 10px;
+    }
+     .menu {
+        /* display: none; */
+        display: block;
+        transition: all 0.5s linear;
+        position: fixed;
+        left: 0%;
+        left: -100%;
+        top: 100px;
+        background-color: black;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+    }
+    #click:checked ~ .menu{
+        left: 0;
+    } 
+    .menu li{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        margin: 5px;
+    }
+   
+    .sign{
+        display: none;
+    }
+    .more{
+        display: inline-flex;
+        border: 2px solid black;
+        width: 60px;
+        height: 8vh;
+        margin: 0px 10px 5px 10px;
+    }
+    .more:hover{
+        display: inline-flex;
+        border-bottom: 2px solid red;
+        border-radius: 5px;
+        transition: all 0.5s linear;
+        height: 8vh;
+        margin: 5px 10px 5px 10px;
+    }
+}
+@media screen and (max-width: 700px) {
+   
+    .sign{
+        font-size: 1.3rem;
+        border: 2px solid white;
+        width: 10%;
+        /* border: 2px solid white; */
+        /* display: none; */
+    }
+    .cards{
+        width: 80%;
+    }
+   
+}
+
+
+@media screen and (max-width: 650px) {
+    .sign{
+        display: none;
+    }
+    .back-back{
+        height: 50vh;
+    }
+    .sign{
+        font-size: 1.2rem;
+        width: 25%;
+        height: 20vh;
+        /* border: 2px solid white; */
+    }
+    .sign:hover{
+        font-size: 1.2rem;
+        width: 25%;
+        /* border: 2px solid white; */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .more{
+        width: 60px;
+    }
+    .more:hover{
+        width: 50px;
+    }
+    .logo{
+        width: 30%;
+        /* height: 5vh; */
+    }
+    .back-back{
+        height: 30vh;
+    }
+}
